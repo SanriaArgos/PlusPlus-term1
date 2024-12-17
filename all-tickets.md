@@ -2068,7 +2068,7 @@ std::ostream& operator<<(std::ostream& os, const T& obj) {
       
     Функция для конкатенации: 
     ```c++
-    char* strcat(cosnt char* a, const char* b) {
+    char* strcat(const char* a, const char* b) {
       char* res = new char[std::strlen(a) + std::strlen(b) + 1]; // +1 для '\0'.
       int res_len = 0;
       for (int i = 0; a[i]; i++) {
@@ -2685,7 +2685,7 @@ struct Point {
     int dist2() {
         return x * x + y * y;
     }
-}
+};
 ```
 
 (А ещё можно объявить в структуре, а определить потом вообще в другом месте, смотри последний пункт билета)
