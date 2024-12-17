@@ -1999,7 +1999,10 @@ std::ostream& operator<<(std::ostream& os, const T& obj) {
       }
     }
     ```
+* ## C-style-arrays/массивы в стиле Си
 
+* [Подробный разбор] (https://chatgpt.com/share/676195d7-3010-800f-8634-cfd8a8a2d6b1)
+  
 * ## C-style-strings/ASCIIZ-строки/строки в стиле Си
   * ### Определение
     `C-style-strings` - это не тип, а конвенция. 
