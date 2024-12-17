@@ -2365,6 +2365,13 @@ int main() {
 
 <details>
 <summary>
+ Билет 19. Правило пяти и move-семантика
+</summary>
+Ссылка: https://chatgpt.com/share/6761ada6-06dc-800f-a119-4b19ffe92cb1
+ </details>
+ 
+<details>
+<summary>
  Билет 20. Классы
 </summary>
 
