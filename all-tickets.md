@@ -5398,6 +5398,10 @@ Static, примененный к сущностям работает как unn
 ### О чём это
 Рассмотрим программу, состоящую из нескольких единиц трансляции: `a.cpp` и `b.cpp`. Пусть в `a.cpp` и `b.cpp` создаются объекты с статическим временем жизни (см. [билет 15](https://github.com/khbminus/CppTickets/blob/master/tickets/ticket15.md#static-storage-duration)), например глобальные переменные. В таком случае порядок инициализации этих переменных зависит от порядка линковки этих единиц трансляции. Это может привести к проблемам.
 <!-- TODO: make references to other tickets uniform --->
+
+### Глобальное состояние программы: примеры
+Ссылка: https://chatgpt.com/c/67621ffb-46f4-800f-b287-1a68aaa2d941
+
 ### Создание и уничтожение объектов со статическим временем жизни
 В целом, объекты с static storage duration инициализируются при запуске программы (в каком-то порядке) и удаляются по завершению программы (в неочевидном порядке<sup>[1](https://www.youtube.com/watch?v=XdrSzs04HKU&list=PL8a-dtqmQc8obAqSKqGkau8qiafPRCxV7&t=4806s)</sup> <sup>[2](https://stackoverflow.com/questions/31443437/why-is-the-order-of-destruction-of-these-function-local-static-objects-not-the-i)</sup>, под разными компиляторами по-разному). Также стандарт C++ гарантирует, что все static storage duration объекты внутри одной единицы трансляции будут проинициализированы по порядку<sup>[3](https://en.cppreference.com/w/cpp/language/initialization#:~:text=initialization%20of%20these%20variables%20is%20always%20sequenced%20in%20exact%20order%20their%20definitions%20appear%20in%20the%20source%20code.)</sup>, но нет никаких гарантий про порядок между ними! 
 #### У кого static storage duration
@@ -7228,5 +7232,24 @@ int main() {
 [хабр](https://habr.com/ru/post/463385/)  
 
 Ну мы немного не сделали, если у вас есть силы... (с меня Strongbow/что угодно с такой же стоимостью)
+</details>
+
+
+</details>
+
+<details>
+<summary>
+ Билет 45. Использование наследования
+</summary>
+Ссылка: https://chatgpt.com/c/67621f3a-74c4-800f-b84c-6ca59c39a3dc
+</details>
+
+</details>
+
+<details>
+<summary>
+ Билет 51. Базовая многопоточность
+</summary>
+Описание: https://chatgpt.com/c/67621d5e-6ef4-800f-880a-7c57e5582b7a
 </details>
 
