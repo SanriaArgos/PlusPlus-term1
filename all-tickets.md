@@ -2001,7 +2001,7 @@ std::ostream& operator<<(std::ostream& os, const T& obj) {
     ```
 * ## C-style-arrays/массивы в стиле Си
 
-* [Подробный разбор] (https://chatgpt.com/share/676195d7-3010-800f-8634-cfd8a8a2d6b1)
+* Ссылка: https://chatgpt.com/share/676195d7-3010-800f-8634-cfd8a8a2d6b1
   
 * ## C-style-strings/ASCIIZ-строки/строки в стиле Си
   * ### Определение
@@ -5400,7 +5400,7 @@ Static, примененный к сущностям работает как unn
 <!-- TODO: make references to other tickets uniform --->
 
 ### Глобальное состояние программы: примеры
-Ссылка: https://chatgpt.com/c/67621ffb-46f4-800f-b287-1a68aaa2d941
+Ссылка: [https://chatgpt.com/c/67621ffb-46f4-800f-b287-1a68aaa2d941](https://chatgpt.com/share/6762a0f2-c3b8-800f-837f-2a28140ef78a)
 
 ### Создание и уничтожение объектов со статическим временем жизни
 В целом, объекты с static storage duration инициализируются при запуске программы (в каком-то порядке) и удаляются по завершению программы (в неочевидном порядке<sup>[1](https://www.youtube.com/watch?v=XdrSzs04HKU&list=PL8a-dtqmQc8obAqSKqGkau8qiafPRCxV7&t=4806s)</sup> <sup>[2](https://stackoverflow.com/questions/31443437/why-is-the-order-of-destruction-of-these-function-local-static-objects-not-the-i)</sup>, под разными компиляторами по-разному). Также стандарт C++ гарантирует, что все static storage duration объекты внутри одной единицы трансляции будут проинициализированы по порядку<sup>[3](https://en.cppreference.com/w/cpp/language/initialization#:~:text=initialization%20of%20these%20variables%20is%20always%20sequenced%20in%20exact%20order%20their%20definitions%20appear%20in%20the%20source%20code.)</sup>, но нет никаких гарантий про порядок между ними! 
@@ -7241,7 +7241,7 @@ int main() {
 <summary>
  Билет 45. Использование наследования
 </summary>
-Ссылка: https://chatgpt.com/c/67621f3a-74c4-800f-b84c-6ca59c39a3dc
+Ссылка: [https://chatgpt.com/c/67621f3a-74c4-800f-b84c-6ca59c39a3dc](https://chatgpt.com/share/6762a072-8fe8-800f-962c-ea61d753567c)
 </details>
 
 </details>
@@ -7250,7 +7250,7 @@ int main() {
 <summary>
  Билет 51. Базовая многопоточность
 </summary>
-Описание: https://chatgpt.com/c/67621d5e-6ef4-800f-880a-7c57e5582b7a
+Описание: [https://chatgpt.com/c/67621d5e-6ef4-800f-880a-7c57e5582b7a](https://chatgpt.com/share/6762a0c7-2520-800f-8136-948ddc2185bf)
 
 Поток, он же Thread, он же нить — процесс, который выполняет код параллельно с другими потоками.
 
