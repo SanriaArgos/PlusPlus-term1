@@ -598,6 +598,17 @@ int main() {
         [[maybe_unused]] auto &y = bar();  // const int&
         [[maybe_unused]] const auto &z = bar();  // const int&
     }
+    {
+	int x = 42;
+	int& ref = x;
+	auto a = ref;  // `auto` выводится как `int`, ссылка снимается.
+	a = 100;       // Это допустимо. Теперь `a` — это копия `x`, а не ссылка.
+    }
+    {
+	const int x = 42;
+	auto a = x;  // `auto` выводится как `int`, `const` снимается.
+	a = 100;     // Это допустимо, так как `a` — это копия значения `x`.
+    }
 }
 ```
 Про тип лямбды:
